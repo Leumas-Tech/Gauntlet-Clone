@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PukeTube</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-black text-white text-center">
+    <header class="text-[10px] flex  font-bold my-8 bg-blue-400 flex items-center justify-between p-2">
+        <p class="text-4xl">
+             PukeTube
+        </p>
+       
+ <div class="flex gap-2 items-center justify-between">
+
+<button id="contactButton" class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded my-4">
+    Contact Us
+</button>
+<button id="startChallengeButton" class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded my-4">
+    Start Challenge
+</button>
+ </div>
+
+    </header>
+    <div id="videoIndex" class="text-lg mb-4">Loading...</div>
+    <iframe id="videoPlayer" width="560" height="315" class="mx-auto w-full h-full border-2 rounded-lg m-2" allowfullscreen></iframe>
+<!-- ... existing code ... -->
+    <button id="nextButton" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded hidden my-4">
+    Next Video
+</button>
+<!-- ... existing code ... -->
+
+<div id="contactInfo" class="hidden">
+    <h2 class="text-2xl font-bold mb-4">Our Team</h2>
+    <div id="teamMembers" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <!-- Team members will be inserted here -->
+    </div>
+    <p class="mt-8">Contact us with your video suggestions:</p>
+    <!-- Additional contact form or information if needed -->
+</div>
+
+    
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="script.js"></script>
+</body>
+</html>
